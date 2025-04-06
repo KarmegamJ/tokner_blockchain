@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokners</title>
+    <link
+      rel="shortcut icon"
+      href="/tokners/pics/favicon.svg"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="faq.js" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href=".output.css" rel="stylesheet" />
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="poppins bg-[#F7F5F9]"></body>
+  <header
+    class="z-[99999] flex justify-between px-4 md:px-16 text-white place-items-center"
+  >
+    <img src="/tokners/pics/logo.svg" alt="" class="md:w-auto w-[150px]" />
+    <nav
+      class="flex gap-10 font-medium py-7 place-content-center place-items-center"
+    >
+      <menu
+        id="navlink"
+        class="absolute w-full lg:block md:static md:w-auto md:block left-0 top-[-100%] md:min-h-fit min-h-[60vh]"
+        ><ul
+          class="flex flex-col gap-4 p-5 underline bg-orange-700 md:p-0 md:gap-5 md:bg-transparent md:flex-row decoration-1 underline-offset-4"
+        >
+          <li>OUR TEAM</li>
+          <li>TOKENS</li>
+          <li>CONNECT WALLET</li>
+          <li>LIGHTPAPER</li>
+        </ul></menu
+      >
+      <div class="flex gap-2 md:gap-5 place-items-center">
+        <p
+          class="underline decoration-1 underline-offset-4 lg:text-[18px] text-[12px] md:text-[12px] xl:text-[18px]"
+        >
+          SIGN IN
+        </p>
+        <button
+          class="md:px-10 px-4 py-1 md:py-2 lg:text-[18px] text-[12px] md:text-[12px] xl:text-[18px] text-base font-bold text-black bg-white rounded-full"
+        >
+          SIGN UP
+        </button>
+
+        <ion-icon
+          onclick="onToggleMenu(this)"
+          name="menu"
+          class="text-3xl cursor-pointer md:hidden"
+        ></ion-icon>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="justify-between md:flex place-items-center">
+      <div class="order-2 pb-12">
+        <div>
+          <img
+            src="/tokners/pics/groupperson1.svg"
+            alt=""
+            class="w-[300px] md:w-[600px] animate__animated animate__fadeIn"
+          />
+
+          <img
+            src="/tokners/pics/wavedsvv.png"
+            alt=""
+            class="absolute top-0 right-0 md:top-0 md:right-0 md:w-[1300px] -z-40"
+          />
+        </div>
+      </div>
+      <div
+        class="md:my-[100px] w-auto order-1 md:px-28 animate__animated animate__fadeInUp"
+      >
+        <p
+          class="lg:text-[18px] text-[16px] md:text-[16px] xl:text-[20px] font-semibold leading-4 text-[#2278D4]"
+        >
+          At Tokens are
+        </p>
+        <h1
+          class="lg:text-[30px] text-[30px] md:text-[30px] xl:text-[40px] font-bold w-[300px] md:w-[550px] py-2 md:py-4"
+        >
+          Reimagining social media through the power of the blockchain.
+        </h1>
+        <p
+          class="w-[300px] md:w-[550px] lg:text-[18px] text-[12px] md:text-[12px] xl:text-[18px] opacity-65 pb-3 md:pb-10"
+        >
+          We are creating social media 3.0 with influencers, celebrities and
+          creators being able to launch their own digital currency by simply
+          creating a profile with media content posted as Non fungible Tokens
+          that can be owned and traded on the Tokners network
+        </p>
+        <button
+          class="px-5 lg:text-[18px] text-[12px] md:text-[12px] xl:text-[18px] text-white font-bold py-2 rounded-full bg-[#22A75D]"
+        >
+          LEARN MORE
+        </button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="md:flex md:justify-evenly place-items-center">
+      <div
+        class="place-items-center w-[300px] md:w-[600px] my-8 md:h-[800px] h-[500px] overflow-hidden bg-[#F2F0F4] rounded-3xl py-5 md:py-10"
+        data-aos="fade-up"
+      >
+        <p
+          class="text-center lg:text-[20px] text-[20px] md:text-[20px] xl:text-[30px]"
+        >
+          For
+          <span
+            class="underline decoration-1 underline-offset-4 text-[#22A75D] font-bold"
+            >Creators</span
+          >
+        </p>
+        <p
+          class="lg:text-[16px] text-[12px] h-[180px] md:h-[180px] md:text-[12px] py-8 text-center xl:text-[16px] opacity-65 px-8"
+        >
+          Creators can gain independence through a decentralised digital
+          currency system that is dependent on growing and engaging with the
+          community and also their star power. They own 10-15% of the total
+          value of the tokens minted.
+        </p>
+        <img src="/tokners/pics/create.svg" alt="" class="" />
+      </div>
+      <div
+        class="place-items-center w-[300px] md:w-[600px] my-8 md:h-[800px] h-[500px] overflow-hidden bg-[#F2F0F4] rounded-3xl py-5 md:py-10"
+        data-aos="fade-up"
+      >
+        <p
+          class="text-center lg:text-[20px] text-[20px] md:text-[20px] xl:text-[30px]"
+        >
+          For
+          <span
+            class="underline decoration-1 underline-offset-4 text-[#2278D4] font-bold"
+            >Holders</span
+          >
+        </p>
+        <p
+          class="lg:text-[16px] text-[12px] h-[180px] md:h-[120px] md:text-[12px] py-8 text-center xl:text-[16px] opacity-65 px-8"
+        >
+          Holding social tokens allows the individual to gain access to benefits
+          including unreleased content, private communities, direct access to
+          celebrity, early-access to tickets and more as well as the ability to
+          trade with other communities in order to gain access to more creator
+          content with early token buyers being the biggest winners as the value
+          of the token increases with more buyers.
+        </p>
+        <img src="/tokners/pics/holdd.svg" alt="" class="" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="relative bg-[url(/tokners/pics/bluewave.png)] bg-cover">
+      <img
+        src="/tokners/pics/bluewave.png"
+        alt=""
+        class="md:absolute md:block hidden md: top-[-300px] -z-30"
+      />
+      <div
+        class="py-32 text-white md:py-20 md:flex place-items-center md:place-content-center justify-evenly"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div class="flex items-start gap-10">
+          <img src="/tokners/pics/favicon.svg" alt="" class="w-10 md:w-16" />
+          <p
+            class="lg:text-[35px] text-[25px] md:text-[25px] xl:text-[35px] w-[300px] leading-9"
+          >
+            What makes us different?
+          </p>
+        </div>
+        <div
+          class="lg:text-[16px] text-[12px] md:text-[12px] xl:text-[16px] font-light w-[300px] md:w-[600px] opacity-60"
+        >
+          <p class="py-10 md:pb-4">
+            We would only launch tokens with the express permission of the
+            creators.
+          </p>
+          <p>
+            There are several thousand celebrities and creators on twitter,
+            tiktok, Instagram and YouTube with followings in the millions who we
+            would be
+            <span class="font-bold opacity-100"> actively engaging </span>
+            before we go viral.
+            <br />
+
+            We would get them on our platform and they would see the opportunity
+            to create a fan driven digital economy where their digital content
+            can be traded as NFTs and their most loyal fans can have the
+            monetary value of their creator's currency
+            <span class="font-bold opacity-100"> increase significantly </span>
+            as they promote their digital currency across their channels while
+            our native token holders benefit from the Tokners popularity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="relative place-items-center py-[300px]">
+      <img
+        src="/tokners/pics/infograph.png"
+        alt=""
+        class="md:w-[1200px] md:block hidden"
+      />
+      <img
+        src="/tokners/pics/info1.png"
+        alt=""
+        class="md:hidden w-[300px] -mt-[250px]"
+      /><img
+        src="/tokners/pics/paperflight.png"
+        alt=""
+        class="absolute md:w-[200px] w-[100px] top-10 right-6 md:top-44 md:right-36"
+        data-aos="fade-right"
+      />
+    </div>
+  </section>
+  <section>
+    <div
+      class="md:flex place-items-center md:mt-0 mt-[-200px] md:justify-evenly gap-4 bg-[#F2F0F4] p-8 ]"
+    >
+      <img
+        src="/tokners/pics/bgwave2.png"
+        alt=""
+        class="absolute -z-20 md:block hidden md:mt-[-100px]"
+      />
+      <div class="md:w-[600px] w-[300px] z-50" data-aos="fade-up">
+        <p
+          class="lg:text-[25px] text-[18px] md:text-[18px] xl:text-[25px] font-bold py-3"
+        >
+          Tokners is coming
+        </p>
+        <p
+          class="font-bold opacity-60 lg:text-[16px] text-[14px] md:text-[14px] xl:text-[16px]"
+        >
+          Cryptocurrency adoption is at less than 1% of the global world
+          population with some countries and entities actively fighting against
+          its mass adoption and the smartest developers and nerds holding the
+          fort.
+        </p>
+        <p
+          class="font-light opacity-60 lg:text-[16px] text-[14px] md:text-[14px] xl:text-[16px]"
+        >
+          Bitcoin was the first, and it has since grown to thousands of tokens
+          launched all aiming to fix one problem or the other with some quite
+          simply FOMOing the moment. Our goal is to bring mass adoption to the
+          cryptocurrency space by dumbing it down. How far down? So down that
+          even a celebrity can explain it in simple words to their followers and
+          have them download an app, buy into the social currency of their
+          favourite person and watch their investment as is with other
+          cryptocurrency project. <br />
+          We are trying to do to this space what investment apps did for the
+          "nonexistent retail investors". We are gamefying digital currency,
+          bringing in popular faces instead of hard to understand projects to
+          make it the norm and inadvertently being the "gateway drug" for a lot
+          of people to finally give this space a real look.
+        </p>
+        <p
+          class="font-bold opacity-60 lg:text-[16px] text-[14px] md:text-[14px] xl:text-[16px]"
+        >
+          A new digital economy is coming. People would be just as powerful as
+          countries and creators would be paid beyond the peanuts that
+          conventional social media platforms can offer.
+        </p>
+        <p
+          class="font-light opacity-60 lg:text-[16px] text-[14px] md:text-[14px] xl:text-[16px]"
+        >
+          There would be new markets and advertisers with little to offer would
+          not find home there. Like Kanye said, "Personalities would become the
+          new currency, and services would be built on top of them". Well, Kanye
+          didn't exactly say that, but it sounds like something we hope he would
+          say. Currency is digital, it has been that way for a while now, but
+          this time there would be no dead presidents on the money, there would
+          people like you on the money, and you would own it because it would
+          make the most sense in the world.
+        </p>
+      </div>
+      <div>
+        <div class="relative z-30 py-4">
+          <img
+            src="/tokners/pics/box.png"
+            alt=""
+            class="z-20 w-[300px] md:w-[600px]"
+          />
+          <div>
+            <img
+              src="/tokners/pics/rocket.png"
+              alt=""
+              class="w-[600px] md:w-[700px] absolute bottom-0 left-[-100px] md:bottom-[-100px] md:left-[-200px]"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            />
+            <img
+              src="/tokners/pics/cloud1.png"
+              alt=""
+              class="w-[150px] md:w-[200px] absolute top-2 md:top-10 left-20"
+              data-aos="fade-down"
+            />
+            <img
+              src="/tokners/pics/cloud2.png"
+              alt=""
+              class="w-[150px] md:w-[300px] absolute top-56 md:top-64 right-[50px]"
+              data-aos="fade-down"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="relative place-items-center">
+      <img
+        src="/tokners/pics/bgwaveorange1.png"
+        alt=""
+        class="absolute md:scale-100 -z-30"
+      />
+
+      <div class="pt-[100px] md:pt-[220px]">
+        <p class="text-[40px] font-bold text-center text-white">
+          Presale Details
+        </p>
+        <div class="relative gap-10 pb-20 md:flex pt-14" data-aos="fade-up">
+          <div
+            class="w-[300px] scale-90 md:scale-100 place-items-center relative h-[350px] rounded-xl bg-white"
+          >
+            <p class="text-[185px] z-20 font-bold text-white drop-shadow">01</p>
+            <div class="absolute bottom-10 left-14 place-content-center">
+              <div class="pb-12 text-center">
+                <h1 class="text-xl font-semibold">Phase One</h1>
+                <p class="text-xs text-[#191B21]">01/04/2021 - 16/04/2021</p>
+              </div>
+              <div class="text-center text-[#191B21]">
+                <p class="pt-4 pb-2">1 BNB = 100000 Tokners</p>
+                <p class="font-light">
+                  Soft cap: <span class="font-semibold"> 5000 BNB</span>
+                </p>
+                <p class="font-light">
+                  Hard cap: <span class="font-semibold"> 10000 BNB </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[300px] scale-90 md:scale-100 place-items-center md:mt-8 relative h-[350px] rounded-xl bg-white"
+          >
+            <p class="text-[185px] z-20 font-bold text-white drop-shadow">02</p>
+            <div class="absolute bottom-10 left-14 place-content-center">
+              <div class="pb-12 text-center">
+                <h1 class="text-xl font-semibold">Phase Two</h1>
+                <p class="text-xs text-[#191B21]">01/04/2021 - 16/04/2021</p>
+              </div>
+              <div class="text-center text-[#191B21]">
+                <p class="pt-4 pb-2">1 BNB = 100000 Tokners</p>
+                <p class="font-light">
+                  Soft cap: <span class="font-semibold"> 5000 BNB</span>
+                </p>
+                <p class="font-light">
+                  Hard cap: <span class="font-semibold"> 10000 BNB </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[300px] scale-90 md:scale-100 place-items-center relative h-[350px] rounded-xl bg-white"
+          >
+            <p class="text-[185px] z-20 font-bold text-white drop-shadow">03</p>
+            <div class="absolute bottom-10 left-14 place-content-center">
+              <div class="pb-12 text-center">
+                <h1 class="text-xl font-semibold">Phase Three</h1>
+                <p class="text-xs text-[#191B21]">01/04/2021 - 16/04/2021</p>
+              </div>
+              <div class="text-center text-[#191B21]">
+                <p class="pt-4 pb-2">1 BNB = 100000 Tokners</p>
+                <p class="font-light">
+                  Soft cap: <span class="font-semibold"> 5000 BNB</span>
+                </p>
+                <p class="font-light">
+                  Hard cap: <span class="font-semibold"> 10000 BNB </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="/tokners/pics/presaleperson1.png"
+            alt=""
+            class="absolute w-[150px] md:bottom-0 bottom-[750px] left-[-100px] md:left-56"
+            data-aos="fade-right"
+          />
+          <img
+            src="/tokners/pics/presaleperson2.png"
+            alt=""
+            class="absolute w-[150px] md:bottom-0 md:right-60 bottom-[300px] right-[-55px]"
+            data-aos="fade-right"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="pt-10 text-black md:text-white">
+      <p class="text-[40px] font-bold text-center">How to Buy</p>
+      <main class="p-5 bg-light-blue">
+        <div class="flex items-start justify-center my-2">
+          <div class="w-full my-1 sm:w-10/12 md:w-1/2">
+            <ul class="flex flex-col">
+              <li class="my-2" x-data="accordion(1)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row items-center justify-between p-3 font-semibold cursor-pointer"
+                >
+                  <span
+                    >First Connect your Metamask or TrustWallet to the "Connect
+                    Wallet" on the Homepage.</span
+                  >
+                  <svg
+                    :class="handleRotate()"
+                    class="w-6 h-6 transition-transform duration-500 transform fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  x-ref="tab"
+                  :style="handleToggle()"
+                  class="overflow-hidden transition-all duration-500 border-l-2 border-white max-h-0"
+                >
+                  <p class="p-3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Recusandae hic vel distinctio temporibus eligendi est
+                    veritatis consequuntur neque, cum repudiandae sed velit
+                    deleniti pariatur rem nam! Quasi id magni quidem!
+                  </p>
+                </div>
+              </li>
+              <li class="my-2" x-data="accordion(2)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row items-center justify-between p-3 font-semibold cursor-pointer"
+                >
+                  <span
+                    >Then send minimum of 0.1 BNB or maximum of 10 BNB to the
+                    Presale wallet</span
+                  >
+                  <svg
+                    :class="handleRotate()"
+                    class="w-6 h-6 transition-transform duration-500 transform fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  class="overflow-hidden transition-all duration-500 border-l-2 border-white max-h-0"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corrupti id reprehenderit consequatur debitis! Facilis est
+                    ad ipsa veritatis corporis corrupti eum, consequatur modi
+                    delectus. Ipsam pariatur excepturi commodi dolorem tempore!
+                  </p>
+                </div>
+              </li>
+              <li class="my-2" x-data="accordion(3)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row items-center justify-between p-3 font-semibold cursor-pointer"
+                >
+                  <span
+                    >Then after you will received your $Tokners to your address
+                    within 24hours.
+                  </span>
+                  <svg
+                    :class="handleRotate()"
+                    class="w-6 h-6 transition-transform duration-500 transform fill-current"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  class="overflow-hidden transition-all duration-500 border-l-2 border-white max-h-0"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur itaque hic ratione! Reprehenderit atque itaque
+                    officia asperiores eligendi voluptatibus, eos assumenda
+                    debitis optio expedita dolor impedit quia, deserunt pariatur
+                    magni?
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+  <footer class="md:mt-44">
+    <div class="bg-[#1D1534] relative text-white pt-[150px]">
+      <div class="absolute md:block hidden top-[-300px] -z-50">
+        <img src="/tokners/pics/bluebg.png" alt="" class="bottom-1 -z-50" />
+      </div>
+      <div class="place-self-center">
+        <menu class="font-semibold"
+          ><ul
+            class="flex-row underline md:flex pb-11 md:gap-24 decoration-1 underline-offset-4"
+          >
+            <li>OUR TEAM</li>
+            <li>TOKENS</li>
+            <li>CONNECT WALLET</li>
+            <li>LIGHTPAPER</li>
+          </ul></menu
+        >
+      </div>
+      <div
+        class="px-24 place-items-center md:self-center md:justify-between md:flex"
+      >
+        <img
+          src="/tokners/pics/footerlogo.svg"
+          alt=""
+          class="w-[100px] py-4 md:py-20"
+        />
+        <div class="flex gap-6 py-4 md:py-20">
+          <div>
+            <box-icon type="logo" name="facebook" color="white"></box-icon>
+          </div>
+          <div><box-icon type="logo" name="meta" color="white"></box-icon></div>
+          <div>
+            <box-icon name="instagram" type="logo" color="white"></box-icon>
+          </div>
+          <div>
+            <box-icon name="github" type="logo" color="white"></box-icon>
+          </div>
+        </div>
+        <div class="py-4 text-center md:py-20">
+          <p>© 2021 Tokners. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script>
+    const navlinks = document.getElementById("navlink");
+    function onToggleMenu(e) {
+      e.name = e.name === "menu" ? "close" : "menu";
+      navLinks.classlist.toggle("top-[9%]");
+    }
+  </script>
+  <script>
+    document.addEventListener("alpine:init", () => {
+      Alpine.store("accordion", {
+        tab: 0,
+      });
+
+      Alpine.data("accordion", (idx) => ({
+        init() {
+          this.idx = idx;
+        },
+        idx: -1,
+        handleClick() {
+          this.$store.accordion.tab =
+            this.$store.accordion.tab === this.idx ? 0 : this.idx;
+        },
+        handleRotate() {
+          return this.$store.accordion.tab === this.idx ? "rotate-180" : "";
+        },
+        handleToggle() {
+          return this.$store.accordion.tab === this.idx
+            ? `max-height: ${this.$refs.tab.scrollHeight}px`
+            : "";
+        },
+      }));
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
